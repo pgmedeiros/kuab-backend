@@ -1,4 +1,4 @@
-package com.kuab.application.domain.course;
+package com.kuab.application.domain.course.model;
 
 import java.util.UUID;
 
