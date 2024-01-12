@@ -1,5 +1,6 @@
 package com.kuab.application.application.controllers;
 
+import com.kuab.application.application.adapters.in.CourseController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.json.AutoConfigureJsonTesters;
