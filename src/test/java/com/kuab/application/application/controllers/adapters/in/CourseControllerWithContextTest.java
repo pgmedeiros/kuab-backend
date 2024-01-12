@@ -1,4 +1,4 @@
-package com.kuab.application.application.controllers;
+package com.kuab.application.application.controllers.adapters.in;
 
 import com.kuab.application.application.adapters.in.CourseController;
 import org.junit.jupiter.api.Test;
