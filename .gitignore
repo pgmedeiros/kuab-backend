@@ -1,2 +1,3 @@
 src/main/resources/data.sql
-target
+target/**
+.idea/
