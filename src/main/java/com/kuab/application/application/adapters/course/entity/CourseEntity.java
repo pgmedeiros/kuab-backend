@@ -1,23 +1,21 @@
-package com.kuab.application.application.adapters.out;
+package com.kuab.application.application.adapters.course.entity;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.UUID;
 
 @Entity
-@Table(name = "Course")
-
+@Table(name = "course")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class CourseEntity {
 
-    @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Id
     private UUID id;
-
-
+    private String description;
 
 }

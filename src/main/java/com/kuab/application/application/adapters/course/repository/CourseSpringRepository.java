@@ -1,9 +1,10 @@
-package com.kuab.application.application.adapters.out;
+package com.kuab.application.application.adapters.course.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import com.kuab.application.application.adapters.course.entity.CourseEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
 
 
-public interface CourseSpringRepository extends CrudRepository<CourseEntity, UUID> {
+public interface CourseSpringRepository extends JpaRepository<CourseEntity, UUID> {
 }

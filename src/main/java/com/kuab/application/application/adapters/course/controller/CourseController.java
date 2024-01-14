@@ -1,4 +1,4 @@
-package com.kuab.application.application.adapters.in;
+package com.kuab.application.application.adapters.course.controller;
 
 import com.kuab.application.domain.course.model.Course;
 import com.kuab.application.domain.course.ports.in.CoursePort;
@@ -19,7 +19,7 @@ public class CourseController {
 
     @GetMapping("/")
     public List<Course> getCourses(UUID id) {
-       return coursePort.getCourses(id);
+       return coursePort.getCourses();
     }
 
 
