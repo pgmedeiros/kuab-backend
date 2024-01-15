@@ -1,8 +1,8 @@
 package com.kuab.application;
 
 import com.kuab.application.application.adapters.course.repository.JpaCourseRepository;
-import com.kuab.application.domain.course.ports.in.CoursePort;
-import com.kuab.application.domain.course.services.CourseService;
+import com.kuab.application.domain.course.ports.in.GetCourseUseCase;
+import com.kuab.application.domain.course.services.GetCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,8 +15,8 @@ public class SpringAppConfig {
 
 
     @Bean
-    CoursePort coursePort() {
-        return new CourseService(repository);
+    GetCourseUseCase getCourseUseCase() {
+        return new GetCourseService(repository);
     }
 
 }

@@ -2,15 +2,14 @@ package com.kuab.application.domain.course.services;
 
 import com.kuab.application.domain.course.model.Course;
 import com.kuab.application.domain.course.ports.out.CourseDatabasePort;
-import com.kuab.application.domain.course.ports.in.CoursePort;
+import com.kuab.application.domain.course.ports.in.GetCourseUseCase;
 
 import java.util.List;
-import java.util.UUID;
 
-public class CourseService implements CoursePort {
+public class GetCourseService implements GetCourseUseCase {
 
     private final CourseDatabasePort port;
-    public CourseService(CourseDatabasePort port) {
+    public GetCourseService(CourseDatabasePort port) {
         this.port = port;
     }
     @Override
