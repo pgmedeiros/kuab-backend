@@ -1,11 +1,11 @@
 package com.kuab.application.application.adapters.common;
 
-import com.kuab.application.application.adapters.course.entity.CourseEntity;
+import com.kuab.application.application.adapters.course.repository.CourseJpaTable;
 import com.kuab.application.domain.course.model.Course;
 
-public class toEntity {
+public class EntityToModel {
 
-    public static Course convert(CourseEntity c) {
+    public static Course convert(CourseJpaTable c) {
         Course course = new Course();
         course.setID(c.getId());
         course.setDescription(c.getDescription());

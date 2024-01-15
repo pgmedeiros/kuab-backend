@@ -1,4 +1,4 @@
-package com.kuab.application.application.adapters.course.entity;
+package com.kuab.application.application.adapters.course.repository;
 
 
 import jakarta.persistence.*;
@@ -11,7 +11,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class CourseEntity {
+public class CourseJpaTable {
 
     @GeneratedValue(strategy = GenerationType.UUID)
     @Id

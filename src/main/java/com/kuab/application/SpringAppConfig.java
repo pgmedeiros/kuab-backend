@@ -13,7 +13,6 @@ public class SpringAppConfig {
     @Autowired
     JpaCourseRepository repository;
 
-
     @Bean
     GetCourseUseCase getCourseUseCase() {
         return new GetCourseService(repository);
