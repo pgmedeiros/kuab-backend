@@ -9,14 +9,12 @@ import java.util.UUID;
 
 public class CourseService implements CoursePort {
 
-    CourseDatabasePort port;
+    private final CourseDatabasePort port;
     public CourseService(CourseDatabasePort port) {
         this.port = port;
     }
     @Override
     public List<Course> getCourses() {
-
-        System.out.print("Apenas para validar");
 
         return port.find();
     }
